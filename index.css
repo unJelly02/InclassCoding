@@ -171,6 +171,11 @@ width:45%;
 .footer-heading{
     padding:10px;
 }
+.social-icons{
+    display:flex;
+    flex-direction:row;
+    gap:25px;
+}
 .icons{
     /* padding:10px; */
     border-radius:50%;
