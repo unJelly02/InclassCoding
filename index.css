@@ -5,7 +5,7 @@
 }
 .navbar{
     background-color: #F7F5F4;
-    height:100px;
+    height:64px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,6 +32,9 @@
     margin:20px;
     font-size: 24px;
 }
+.sub-titleText{
+    font-size:0.5em;
+}
 .logo{
     /* border: 1px solid green; */
     margin:20px;
@@ -43,11 +46,17 @@
 width:49%;
 
 }
+.left{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding-bottom:10%;
+}
 a {
     color:#F7F5F4;
 }
 .right{
-    padding-top: 10%;
+    padding-top: 4%;
 
 }
 .main-page{
@@ -84,7 +93,8 @@ a {
     /* background-color: rgba(182, 173, 199, 0.2); */
 }
 .name{
-    padding-top:10%;
+    padding-top:3%;
+    padding-bottom:2%; 
     font-size:2.5em;
     font-family: 'Chilanka', cursive;
     /* display:flex;
@@ -96,39 +106,31 @@ a {
     
 }
 .sub-title{
-    font-size:30px;
+    font-size:3em;
+        color: #8e485f;
 }
 .sub-para{
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: Niramit;
 }
 .work-title{
-    font-size:2rem;
+    font-size:2.5rem;
     font-weight: bold;
     font-family: Niramit;
     text-align:center;
-width:250px;
+width:45%;
 }
 .work-para{
     /* font-weight: bold; */
-    font-size:1.5rem;
+    font-size:2rem;
     height:300px;
-    width:250px;
+    width:45%;
     font-family: Niramit;
     text-align:center;
-width:250px;
-}
-.test{
-    margin: 22px;
-    background-color: darksalmon;
-    width:90px;
-    height:65px;
-    border-radius:10px;
-    border:none;
-    
 }
 .img{
+    margin-top:5%;
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -146,11 +148,11 @@ width:250px;
 }
 .mpa-shape{
     position:absolute;
-    right:29%;
+    right:3%;
 }
 .mpa-shape1{
     position:absolute;
-    right:37%;
+    right:10%;
 }
 .padding-20{
     padding-top:20%;
@@ -163,7 +165,7 @@ width:250px;
     justify-content: center;
     display:flex;
     flex-direction:column;
-    padding:8%;
+    padding:3%;
     background-color:#F7F5F4;
     font-size:2em;
 }
@@ -211,7 +213,6 @@ width:250px;
     }
     .left, .right{
         width:100%;
-                
         }
     .swingingDoodle{
         width:75%;
@@ -244,6 +245,7 @@ width:250px;
         }
     .sub-title{
         font-size:2em;
+        color: #8e485f;
     }
     .sub-para{
         font-size:1.5em;
@@ -307,7 +309,7 @@ width:250px;
         /* font-weight: bold; */
         font-size:2em;
         height:300px;
-        /* width:250px; */
+        /* width:40%; */
         font-family: Niramit;
         text-align:center;
     }
