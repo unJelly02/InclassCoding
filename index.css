@@ -19,6 +19,11 @@
     display:inline-flex;
     color:#281B2C;
 }
+.material-icons{
+    font-size:30px;
+    margin:20px;
+    display:none!important;
+}
 #misfit{
     font-size: 6rem;
     color:#8E485E;
@@ -38,19 +43,20 @@
 }
 .logo{
     /* border: 1px solid green; */
-    margin:20px;
-    font-size: 30px ;
+    margin:15px;
+    font-size: 37px;
     font-family: 'Reenie Beanie', cursive;
     color:#8E485E;
+    padding-left:9%;
 }
 .left, .right{
 width:49%;
-
 }
 .left{
     display:flex;
     flex-direction:column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    gap:6%;
     padding-bottom:10%;
 }
 a {
@@ -58,14 +64,13 @@ a {
 }
 .right{
     padding-top: 4%;
-
 }
 .main-page{
 
     display: flex;
     /* background-color:#B6ADC7 ;
     opacity:20%; */
-    height:800px;
+    /* height:800px; */
     background-color: rgba(182, 173, 199, 0.2);
     padding-left:10%;
 }
@@ -88,7 +93,7 @@ a {
 }
 .work-page{
     padding-left:10%;
-    display: flex;
+    display: flex; 
     /* background-color:#B6ADC7 ;
     opacity:20%; */
     /* background-color: rgba(182, 173, 199, 0.2); */
@@ -111,11 +116,11 @@ a {
 }
 .sub-para{
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 2em;
     font-family: Niramit;
 }
 .work-title{
-    font-size:2.5rem;
+    font-size:2.5em;
     font-weight: bold;
     font-family: Niramit;
     text-align:center;
@@ -123,7 +128,7 @@ width:45%;
 }
 .work-para{
     /* font-weight: bold; */
-    font-size:2rem;
+    font-size:1.5em;
     height:300px;
     width:45%;
     font-family: Niramit;
@@ -137,13 +142,12 @@ width:45%;
 
 .kkfsf-shape{
     position:absolute;
-    left:6%;
+    left:3%;
     width:25%;
 }
 .kkfsf-shape1{
     position:absolute;
-    left:7%;
-    padding-top: 100px;
+    left:4%;
 
 }
 .mpa-shape{
@@ -193,11 +197,9 @@ width:45%;
 .footer-text{
     color:#8E485E;
     font-weight: bold;
-
-    
 }
 .swingingDoodle{
-    width:75%;
+    width:100%;
     }
 
 @media only screen and (max-width: 1000px) {
@@ -211,6 +213,27 @@ width:45%;
         padding-left:2%;
         padding-right:2%;
     }
+    .work-page .left {
+        display: flex;
+        align-items: center;
+    }
+    .work-page .right {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .material-icons{
+        font-size:30px;
+        display: block !important;
+    }
+    .nav-item{
+        justify-content: space-between;
+        flex-basis: auto; 
+        margin:20px;
+        font-size: 24px;
+        display:none;
+    }
 
     .sub-para{
         font-size:2em;
@@ -222,6 +245,24 @@ width:45%;
     .swingingDoodle{
         width:75%;
         }
+        .main-page{
+            padding-left:10%;
+            display: block;
+            flex-wrap: wrap;
+            /* background-color:#B6ADC7 ;
+            opacity:20%; */
+            /* height:500px; */
+            background-color: rgba(182, 173, 199, 0.2);
+        }
+
+        .work-para{
+            /* font-weight: bold; */
+            font-size:2em;
+            height:300px;
+            /* width:40%; */
+            font-family: Niramit;
+            text-align:center;
+        }
 
 }
 @media only screen and (max-width: 600px) {
@@ -229,7 +270,26 @@ width:45%;
         padding-top:10%;
         font-size:2rem;
     }
-
+    .material-icons{
+        font-size:30px;
+        display: block !important;
+    }
+    .nav-item{
+        justify-content: space-between;
+        flex-basis: auto; 
+        margin:20px;
+        font-size: 24px;
+        display:none;
+    }
+    .work-page .left {
+        display: flex;
+        align-items: center;
+    }
+    .work-page .right {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     #misfit{
         font-size: 3rem;
         color:#8E485E;
@@ -240,13 +300,12 @@ width:45%;
     }
     .left, .right{
         width:100%;
-        
         }
         .work-page{
             display: block;
             padding-left:2%;
             padding-right:2%;
-            align-items: center;;
+            align-items: center;
         }
     .sub-title{
         font-size:5em;
@@ -261,7 +320,7 @@ width:45%;
         flex-wrap: wrap;
         /* background-color:#B6ADC7 ;
         opacity:20%; */
-        height:500px;
+        /* height:500px; */
         background-color: rgba(182, 173, 199, 0.2);
     }
     .main-page .right{
@@ -283,7 +342,7 @@ width:45%;
         width: 80%;
     }
     .swingingDoodle{
-        width:75%;
+        width:100%;
     }
     .kkfsf-shape{
         position:absolute;
