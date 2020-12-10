@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.nav-items{
+.navItems{
     justify-content: space-between;
     flex-direction: row;
     flex-basis: auto; 
@@ -23,6 +23,7 @@
     font-size:30px;
     margin:20px;
     display:none!important;
+    
 }
 #misfit{
     font-size: 6rem;
@@ -30,13 +31,17 @@
     letter-spacing:6px;
     font-family: 'Amatic SC', cursive;
 }
-.nav-item{
+.navItem{
     justify-content: space-between;
     flex-basis: auto; 
     margin:20px;
     font-size: 24px;
 }
-.sub-titleText{
+.navItem:hover{
+    color:#8E485E;
+    cursor:pointer;
+}
+.subTitleText{
     font-size:0.5em;
 }
 .logo{
@@ -63,13 +68,10 @@ a {
 .right{
     padding-top: 4%;
 }
-.main-page{
-
+.mainPage{
     display: flex;
-    /* background-color:#B6ADC7 ;
-    opacity:20%; */
-    /* height:800px; */
     background-color: rgba(182, 173, 199, 0.2);
+    /* background:linear-gradient( 45deg, #e9e4f0, #d3cce3 ); */
     padding-left:10%;
     flex-wrap: wrap;
 }
@@ -78,54 +80,51 @@ a {
     right:6%;
     width:25%;
 }
-.second-shape{
+.third-shape{
+    position:absolute;
+    right:30%;
+    top:20%;
+    width:25%;
+}
+.secondShape{
     position:absolute;
     left:3%;
     top:35%;
     width: 50%;
 }
-.rentwings-shape{
+.rentwingsShape{
     position:absolute;
     right:6%;
     width: 30%;
     /* top:50%; */
 }
-.work-page{
+.workPage{
     padding-left:10%;
     display: flex; 
-    /* background-color:#B6ADC7 ;
-    opacity:20%; */
-    /* background-color: rgba(182, 173, 199, 0.2); */
 }
 .name{
     padding-top:3%;
     padding-bottom:2%; 
     font-size:2.5em;
     font-family: 'Chilanka', cursive;
-    /* display:flex;
-    flex-direction: column; */
-    /* height:270px;
-    width:270px; */
-    /* border: 1px solid green; */
-    /* text-indent: 2px; */
     
 }
-.sub-title{
+.subTitle{
     font-size:5em;
 }
-.sub-para{
+.subPara{
     font-size: 2em;
     font-family: Niramit;
     width:70%;
 }
-.work-title{
+.workTitle{
     font-size:2.5em;
     font-weight: bold;
     font-family: Niramit;
     text-align:center;
 width:45%;
 }
-.work-para{
+.workPara{
     /* font-weight: bold; */
     font-size:1.5em;
     width:45%;
@@ -136,8 +135,12 @@ width:45%;
     margin-top:5%;
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
+}
+.img:hover{
+    cursor:pointer;
+
+}
 .kkfsf-shape{
     position:absolute;
     left:3%;
@@ -148,18 +151,18 @@ width:45%;
     left:4%;
 
 }
-.mpa-shape{
+.mpaShape{
     position:absolute;
     right:3%;
 }
-.mpa-shape1{
+.mpaShape1{
     position:absolute;
     right:10%;
 }
-.padding-20{
+.padding20{
     padding-top:20%;
 }
-.padding-10{
+.padding10{
     padding-top:10%;
 }
 .connect{
@@ -171,10 +174,10 @@ width:45%;
     background-color:#F7F5F4;
     font-size:2em;
 }
-.footer-heading{
+.footerHeading{
     padding:10px;
 }
-.social-icons{
+.socialIcons{
     display:flex;
     flex-direction:row;
     gap:25px;
@@ -202,16 +205,16 @@ width:45%;
         font-size:10px;
     }
 
-    .work-page{
+    .workPage{
         display: block;
         padding-left:2%;
         padding-right:2%;
     }
-    .work-page .left {
+    .workPage .left {
         display: flex;
         align-items: center;
     }
-    .work-page .right {
+    .workPage .right {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -221,14 +224,14 @@ width:45%;
         font-size:30px;
         display: block !important;
     }
-    .nav-item{
+    .navItem{
         justify-content: space-between;
         flex-basis: auto; 
         margin:20px;
         font-size: 24px;
         display:none;
     }
-    .work-page.kkfsf{
+    .workPage.kkfsf{
         display: flex;
         align-items: center;
         flex-direction:column-reverse;
@@ -240,7 +243,7 @@ width:45%;
         width:75%;
         }
 
-    .work-para{
+    .workPara{
         /* font-weight: bold; */
         font-size:2em;
         }
@@ -255,18 +258,18 @@ width:45%;
         font-size:30px;
         display: block !important;
     }
-    .nav-item{
+    .navItem{
         justify-content: space-between;
         flex-basis: auto; 
         margin:20px;
         font-size: 24px;
         display:none;
     }
-    .work-page .left {
+    .workPage .left {
         display: flex;
         align-items: center;
     }
-    .work-page .right {
+    .workPage .right {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -276,10 +279,10 @@ width:45%;
         width:300px;
         height:270px;
     }
-    .second-shape{
+    .secondShape{
         width: 80%;
     }
-    .work-para{
+    .workPara{
         height:200px;
     }
 
