@@ -146,6 +146,7 @@ width:45%;
 }
 .imageContainer{
     position: relative;
+    transition: 0.3s;
 }
 .middle {
     transition: .5s ease;
@@ -167,8 +168,11 @@ font-size:30px;
 display:flex;
 justify-content: center;
 }
-.imageContainer:hover .middle {
-    opacity: 1;
+.imageContainer:hover {
+    /* opacity: 1; */
+    cursor:pointer;
+    opacity: 0.6;
+    transform: scale(1.05);
 }
 .img{
     margin-top:5%;
@@ -177,11 +181,12 @@ justify-content: center;
     transition: 0.3s;
 
 }
-.img:hover{
+/* .img:hover{
     cursor:pointer;
     opacity: 0.6;
+    transform: scale(1.05);
 
-}
+} */
 .kkfsf-shape{
     position:absolute;
     left:3%;
