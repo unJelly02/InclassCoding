@@ -1,4 +1,3 @@
-
 .body{
     color: #281B2C;
     font-family: 'Chilanka', cursive;
@@ -6,6 +5,7 @@
 }
 .navbar{
     background-color: #e6e3eb;
+    /* background: linear-gradient(45deg,#e9e4f0, #d3cce3); */
     height:64px;
     display:flex;
     flex-direction: row;
@@ -19,10 +19,22 @@
     display:inline-flex;
     color:#281B2C;
 }
+.navItem{
+    justify-content: space-between;
+    flex-basis: auto; 
+    margin:20px;
+    font-size: 24px;
+    /* display:none; */
+}
 .material-icons{
     font-size:30px;
     margin:20px;
     display:none!important;
+    
+}
+.material-icons:hover{
+    color:#8E485E;
+    cursor: pointer;
     
 }
 #misfit{
@@ -63,7 +75,8 @@ width:49%;
     padding-bottom:10%;
 }
 a {
-    color:#F7F5F4;
+    color:#28182c;
+    text-decoration:none;
 }
 .right{
     padding-top: 4%;
@@ -131,14 +144,42 @@ width:45%;
     font-family: Niramit;
     text-align:center;
 }
+.imageContainer{
+    position: relative;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 52%;
+    /* background-color: rgba(142, 72, 95,0.6); */
+    /* color:#ffffff; */
+    height:100px;
+    width:100px;
+    left: 44%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+    }
+.text{
+padding:15px 30px;
+font-size:30px;
+display:flex;
+justify-content: center;
+}
+.imageContainer:hover .middle {
+    opacity: 1;
+}
 .img{
     margin-top:5%;
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
 
 }
 .img:hover{
     cursor:pointer;
+    opacity: 0.6;
 
 }
 .kkfsf-shape{
@@ -154,6 +195,7 @@ width:45%;
 .mpaShape{
     position:absolute;
     right:3%;
+    height:300px;
 }
 .mpaShape1{
     position:absolute;
@@ -172,6 +214,7 @@ width:45%;
     flex-direction:column;
     padding:3%;
     background-color:#F7F5F4;
+    /* background: linear-gradient(45deg,#e9e4f0, #d3cce3); */
     font-size:2em;
 }
 .footerHeading{

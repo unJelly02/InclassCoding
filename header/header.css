@@ -1,0 +1,64 @@
+.navbar{
+    background-color: #e6e3eb;
+    /* background: linear-gradient(45deg,#e9e4f0, #d3cce3); */
+    height:64px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navItems{
+    justify-content: space-between;
+    flex-direction: row;
+    flex-basis: auto; 
+    font-size:1rem;
+    display:inline-flex;
+    color:#281B2C;
+}
+.material-icons{
+    font-size:30px;
+    margin:20px;
+    display:none!important;
+    
+}
+.material-icons:hover{
+    color:#8E485E;
+    cursor: pointer;
+    
+}
+.logo{
+    /* border: 1px solid green; */
+    margin:15px;
+    font-size: 37px;
+    font-family: 'Reenie Beanie', cursive;
+    color:#8E485E;
+    padding-left:9%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .material-icons{
+        font-size:30px;
+        display: block !important;
+    }
+    .navItem{
+        justify-content: space-between;
+        flex-basis: auto; 
+        margin:20px;
+        font-size: 24px;
+        display:none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .material-icons{
+        font-size:30px;
+        display: block !important;
+    }
+    .navItem{
+        justify-content: space-between;
+        flex-basis: auto; 
+        margin:20px;
+        font-size: 24px;
+        display:none;
+    }
+}
