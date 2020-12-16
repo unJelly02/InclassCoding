@@ -339,6 +339,12 @@ input[type=submit]:hover, .filledButton:hover {
     display:flex;
     
 }
+.buttonContainer{
+    display:flex;
+    justify-content:space-evenly;
+    margin-right:18%;
+    padding:2%;
+}
 /* .flexContainer  h2{
     font-size:2em;
     
