@@ -331,9 +331,32 @@ input[type=submit]:hover, .filledButton:hover {
   #quote{
     font-size:2em;
 }
-  
-  /* .stamp {
-      transform: rotate(12deg);
+.mySkills{
+    text-align:center;
+    color:#5d617c;
+}
+.flexContainer{
+    display:flex;
+    
+}
+/* .flexContainer  h2{
+    font-size:2em;
+    
+} */
+.flexContainer div{
+    width:33%;
+    margin:2%;
+    border-radius: 5px;
+    background-color: rgb(150, 137, 175);
+    padding: 20px;
+    z-index: 1;
+    background: inherit;
+    box-shadow: 0 0 1rem 0 rgba(150,137, 175, .6);
+    margin-top:4%;
+    font-family: Niramit;
+}
+/* .stamp {
+    transform: rotate(12deg);
         color: #555;
         font-size: 3rem;
         font-weight: 700;
@@ -395,6 +418,9 @@ input[type=submit]:hover, .filledButton:hover {
         /* font-weight: bold; */
         font-size:2em;
         }
+        .flexContainer div{
+            width:100%;
+        }
 
 }
 @media only screen and (max-width: 600px) {
@@ -433,5 +459,6 @@ input[type=submit]:hover, .filledButton:hover {
     .workPara{
         height:200px;
     }
+
 
 }
