@@ -63,6 +63,7 @@
     font-family: 'Reenie Beanie', cursive;
     color:#8E485E;
     padding-left:9%;
+    width:100%;
 }
 .left, .right{
 width:49%;
@@ -87,6 +88,7 @@ a {
     /* background:linear-gradient( 45deg, #e9e4f0, #d3cce3 ); */
     padding-left:10%;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .first-shape{
     position:absolute;
@@ -246,6 +248,54 @@ justify-content: center;
 .swingingDoodle{
     width:100%;
     }
+.contactIllustration{
+    position:absolute;
+    /* width:100%; */
+    opacity:0.1;
+}
+.mainPage.contact{
+    flex-direction:column;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #9689AF; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    background-color:inherit;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #9689AF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 1rem 0 rgba(150,137, 175, .6);
+}
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #aea1c5;
+}
+  /* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: rgb(150, 137, 175);
+    padding: 20px;
+    z-index: 1;
+    color:#5d617c;
+  background: inherit;
+    box-shadow: 0 0 1rem 0 rgba(150,137, 175, .6);
+    width:75%;
+    margin-top:4%;
+}
 
 @media only screen and (max-width: 1000px) {
 
