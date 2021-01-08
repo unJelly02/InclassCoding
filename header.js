@@ -1,5 +1,4 @@
-
-console.log("Your index.js file is loaded correctly");
+console.log("Your header.js file is loaded correctly");
 $("#toggle").on("click", function(){
     $("#dropDown").slideToggle();
   });
@@ -28,20 +27,3 @@ $("#toggle").on("click", function(){
 //   console.log('clicked');
 //   navLinks.classList.toggle("open");
 // })
-
-$(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-});
-
-// const hamburger = document.querySelector(".hamburger");
-// const navLinks = document.querySelector(".nav-links");
-// const links = document.querySelectorAll(".nav-links li");
-
-// hamburger.addEventListener("click", () => {
-//   console.log('clicked');
-//   navLinks.classList.toggle("open");
-//   links.forEach(link => {
-//     link.classList.toggle("fade");
-//   });
-// });

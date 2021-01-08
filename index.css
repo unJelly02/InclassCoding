@@ -1,76 +1,25 @@
 .body{
-    color: #281B2C;
-    font-family: 'Chilanka', cursive;
-    margin:0px;
-    /* background: linear-gradient(45deg,#fdfbfb, #ebedee); */
+    color: #5e5d6d;
+    font-family: Niramit;
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
 }
-.navbar{
-    background-color: #f1eff4;
-    /* background: linear-gradient(45deg,#e9e4f0, #d3cce3); */
-    /* background: linear-gradient(45deg,#fdfbfb, #ebedee); */
-    height:64px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-.navItems{
-    justify-content: space-between;
-    flex-direction: row;
-    flex-basis: auto; 
-    font-size:1rem;
-    display:inline-flex;
-    color:#281B2C;
-}
-.navItem{
-    justify-content: space-between;
-    flex-basis: auto; 
-    margin:20px;
-    font-size: 24px;
-    /* display:none; */
-}
-.material-icons{
-    font-size:30px;
-    margin:20px;
-    display:none!important;
-    
-}
-.material-icons:hover{
-    color:#8E485E;
-    cursor: pointer;
-    
+*{
+    margin: 0;
 }
 #misfit{
     font-size: 6rem;
     color:#8E485E;
     letter-spacing:6px;
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Sacramento', cursive;
 }
-.navItem{
-    justify-content: space-between;
-    flex-basis: auto; 
-    margin:20px;
-    font-size: 24px;
-}
-.navItem:hover{
-    color:#8E485E;
-    cursor:pointer;
-}
+
 .subTitleText{
     font-size:0.5em;
 }
-.logo{
-    /* border: 1px solid green; */
-    margin:15px;
-    font-size: 37px;
-    font-family: 'Reenie Beanie', cursive;
-    padding-left:9%;
-    width:100%;
-}
-.logo:hover{
-    color:#8E485E;
-}
+
 .left, .right{
 width:49%;
 }
@@ -83,10 +32,7 @@ width:49%;
 .mainPage .left{
         z-index:-1;
 }
-a {
-    color:#28182c;
-    text-decoration:none;
-}
+
 .right{
     padding-top: 4%;
 }
@@ -114,6 +60,14 @@ a {
     top:35%;
     width: 50%;
 }
+.secondShapeOutline{
+    position:absolute;
+    left:3%;
+    top:33%;
+    width: 52%;
+    z-index:-1;
+    opacity:0.5;
+}
 .rentwingsShape{
     position:absolute;
     right:6%;
@@ -128,14 +82,13 @@ a {
     padding-top:3%;
     padding-bottom:2%; 
     font-size:2.5em;
-    font-family: 'Chilanka', cursive;
     z-index:-1;
 }
 .subTitle{
-    font-size:5em;
+    font-size:4em;
 }
 .subPara{
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: Niramit;
     width:70%;
     color:#5d617c;
@@ -143,14 +96,12 @@ a {
 .workTitle{
     font-size:2.5em;
     font-weight: bold;
-    font-family: Niramit;
     text-align:center;
 width:45%;
 }
 .workPara{
     font-size:1.5em;
     width:45%;
-    font-family: Niramit;
     text-align:center;
     color:#5d617c;
 }
@@ -230,7 +181,7 @@ justify-content: center;
     padding:3%;
     background-color:#ffffff;
     /* background: linear-gradient(45deg,#e9e4f0, #d3cce3); */
-    font-size:2em;
+    font-size:1.5em;
 }
 .footerHeading{
     padding:10px;
@@ -250,17 +201,12 @@ justify-content: center;
     cursor:pointer;
 }
 .footer-text{
-    color:#8E485E;
+    color:#8571aa;
     font-weight: bold;
 }
 .swingingDoodle{
     width:100%;
     }
-.contactIllustration{
-    position:absolute;
-    /* width:100%; */
-    opacity:0.1;
-}
 .mainPage.contact{
     flex-direction:column;
 }
@@ -391,10 +337,6 @@ input[type=submit]:hover, .filledButton:hover {
 
 @media only screen and (max-width: 1000px) {
 
-    .body{
-        font-size:10px;
-    }
-
     .workPage{
         display: block;
         padding-left:2%;
@@ -407,19 +349,8 @@ input[type=submit]:hover, .filledButton:hover {
     .workPage .right {
         display: flex;
         align-items: center;
+        justify-content:center;
         flex-direction: column;
-    }
-
-    .material-icons{
-        font-size:30px;
-        display: block !important;
-    }
-    .navItem{
-        justify-content: space-between;
-        flex-basis: auto; 
-        margin:20px;
-        font-size: 24px;
-        display:none;
     }
     .workPage.kkfsf{
         display: flex;
@@ -452,7 +383,7 @@ input[type=submit]:hover, .filledButton:hover {
 
     .workPara{
         /* font-weight: bold; */
-        font-size:2em;
+        font-size:1.5em;
         }
         .flexContainer div{
             width:100%;
@@ -474,7 +405,9 @@ input[type=submit]:hover, .filledButton:hover {
     li {
         margin:0;
         padding: 15px;
+        /* border: 1px solid #f2f2f2; */
         border: 1px solid black;
+        /* border-radius: 25px; */
     }
 
 }
@@ -482,17 +415,6 @@ input[type=submit]:hover, .filledButton:hover {
     .name{
         padding-top:10%;
         font-size:2rem;
-    }
-    .material-icons{
-        font-size:30px;
-        display: block !important;
-    }
-    .navItem{
-        justify-content: space-between;
-        flex-basis: auto; 
-        margin:20px;
-        font-size: 24px;
-        display:none;
     }
     .workPage .left {
         display: flex;
@@ -502,6 +424,11 @@ input[type=submit]:hover, .filledButton:hover {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+    .flexContainer{
+        display:flex;
+        flex-wrap: wrap;
+        
     }
 
     .img{

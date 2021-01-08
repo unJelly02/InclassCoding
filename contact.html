@@ -10,68 +10,50 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-C9DS2K7458');
+  </script>
     </head>
     <body class="body">
-        
-        <script src="contact.js" async defer></script>
-        <div class="navbar">
-            
-            <a href = "index.html"><div class="logo"> Anjali Anusuri</div>  </a>
-
-            <div class="navItems">
-                <span class="material-icons">menu</span>
-                <a href = "aboutme.html"> 
-                <div class="navItem">About Me</div>
-                </a>
-                <div class="navItem">Projects</div>
-                <a href = "contact.html"> 
-                <div class="navItem">Contact</div>
-                </a>
-            </div>
-        </div>
+        <div id="header"></div>
 
         <div class="mainPage contact">
                 <div class="name" >Hello from the other side!</span></div> 
-                <div class="subPara" >I would love to hear from you.Please drop in a letter to my inbox and I will get back to you. </div> 
+                <div class="subPara" >I would love to hear from you. Please drop in a letter to my inbox and I will get back to you. </div> 
                 <div style="margin-top:2%;" >Assuming you love my work which i am sure you do..</div>
 
             <div class="container">
-                <form action="/action_page.php">
+                <form method="POST" name="google-sheet">
                 <label for="name"> Name</label>
-                <input type="text" id="fname" name="name" placeholder="Your name">
+                <input type="text" id="name" name="name" placeholder="Your name" required>
 
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your email">
+                <input type="text" id="email" name="email" placeholder="Your email" required>
 
                 <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something..(A cheque for a million dollars to me would be nice!)" style="height:200px"></textarea>
-                <input type="submit" value="Submit">
+                <textarea id="subject" name="subject" placeholder="Write something..(A cheque for a million dollars to me would be nice!)" style="height:200px" required></textarea>
+                    <button class = "filledButton" type="submit" >Submit</button>
                 </form>
             </div>
 
             <img class ="secondShape" src = "images/Ellipse 3.svg"/>
-            <!-- <img class ="secondShape" src = "images/queen-svgrepo-com.svg"/> -->
             <br>
         
             </div>
         </div>
 
-        <div class="connect">
-            <div class="footerHeading"> 
-                <span class="footer-text">Lets connect! </span> &nbsp If you like what you see</div>
-            
-            <div class="socialIcons">
-                <a href = "https://www.linkedin.com/in/anjali-anusuri-369367a0/"> 
-                <img class = "icons" src = "images/facebook.svg" width = "40px" height = "40px" style="background-color :#3b5998"/>
-                </a>
-                <a href = "https://www.linkedin.com/in/anjali-anusuri-369367a0/"> 
-                <img class = "icons"  src = "images/Linkedin.svg" width = "40px" height = "40px" style="background-color :#2877b5"/>
-                </a>
-                <a href = "https://www.instagram.com/un_jellyy/"> 
-                <img class = "icons"  src = "images/instagram.svg" width = "40px" height = "40px" style="background-color :#c13584"/>
-                </a>
-            </div>
-        </div>
-
+        <div id="footer"></div>
+        
+    </body>
+    <script src="contact.js" async defer></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script> 
 
 </html>
